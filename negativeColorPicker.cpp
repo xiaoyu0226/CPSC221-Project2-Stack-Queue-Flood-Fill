@@ -31,5 +31,4 @@ RGBAPixel NegativeColorPicker::operator()(PixelPoint p)
   RGBAPixel* pixel = referenceimg.getPixel(p.x, p.y);
   RGBAPixel ret_rgb(255 - pixel->r, 255 - pixel->g, 255 - pixel->b, pixel->a);
   return ret_rgb;
-  
 }
